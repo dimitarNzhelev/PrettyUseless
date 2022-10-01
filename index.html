@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Search engine</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="input-group mb-3 d-flex p-2" id="search_form">
-      <input
-        id="form"
-        type="text"
-        class="form-control"
-        placeholder="Keywords"
-        aria-describedby="button-addon2"
-      />
-      <button
-        class="btn btn-outline-secondary"
-        type="button"
-        id="button-addon2"
-      >
-        Search
-      </button>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Search engine</title>
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <script src="api-call.js"></script>
+</head>
+
+<body>
+  <div id="particles-js" class="background"></div>
+  <script src="particles.js" class="background"></script>
+  <script src="js/app.js" class="background"></script>
+  <div class="topnav">
+    <input type="text" id="form" class="form-control" placeholder="What are you looking for?" />
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="getInputValue();">
+      Search
+    </button>
+  </div>
+<div id="data-panel" class="center" >
+  <script src="api-call.js" onload="displayData();"></script>
+</div>
+
+</body>
 </html>
