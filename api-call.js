@@ -1,5 +1,4 @@
 function getInputValue(){
-    // Selecting the input element and get its value 
     var inputVal = document.getElementById("form").value;
     window.localStorage.setItem('MyString', inputVal);
     window.location = window.location.href;
