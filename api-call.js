@@ -9,10 +9,7 @@ function displayData(){
         var inputVal = window.localStorage.getItem('MyString');
         if (inputVal !== null) 
         {
-            const link = 'https://ntrs.nasa.gov/search?q='
-            FinalLink = link + inputVal
-  
-            document.getElementById("data-panel").innerHTML = FinalLink;
+            alert("Request needs to be made");
         }
         
         window.localStorage.removeItem('MyString');
